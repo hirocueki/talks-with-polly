@@ -5,13 +5,17 @@
   %thead
     %tr
       %th Content
+      %th Chars
       %th Voice
       %th Audio
       %th{:colspan => "3"}
   %tbody
     - @talks.each do |talk|
       %tr
-        %td= talk.content
+        %td
+          = truncate(talk.content)
+        %td
+          %span.badge.badge-warning= talk.content.length
         %td
           %span.badge.badge-primary= talk.voice_jp
         %td
