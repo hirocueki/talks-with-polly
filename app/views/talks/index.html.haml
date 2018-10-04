@@ -1,0 +1,23 @@
+%p#notice= notice
+%h1 Amazon Polly 音声合成テスト
+= link_to '新規作成', new_talk_path
+%table
+  %thead
+    %tr
+      %th Content
+      %th Voice
+      %th Audio
+      %th{:colspan => "3"}
+  %tbody
+    - @talks.each do |talk|
+      %tr
+        %td= talk.content
+        %td= talk.voice_jp
+        %td
+          %audio#talk{:controls => "", :src => "#{'/'+File.basename(talk.audio_path)}"}
+            Your browser does not support the
+            %code audio
+            element.
+        %td= link_to 'Show', talk
+        %td= link_to 'Destroy', talk, method: :delete, data: { confirm: 'Are you sure?' }
+%br/
