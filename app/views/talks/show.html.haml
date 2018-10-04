@@ -1,0 +1,13 @@
+%p#notice= notice
+%p
+  %strong Content:
+  = @talk.content
+%p
+  %strong Voice:
+  %span.badge.badge-primary= @talk.voice_jp
+%p
+  %audio#talk{:controls => "", :src => "#{'/'+File.basename(@talk.audio_path)}"}
+    Your browser does not support the
+    %code audio
+    element.
+= link_to 'Back', talks_path
