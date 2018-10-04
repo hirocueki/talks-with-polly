@@ -6,10 +6,11 @@ class Talk < ApplicationRecord
   }
 
   def voice_jp
-    Talk.voice_lists_i18n.each do |v|
-      v.first == voice_id
-      return v.last
+    Talk.voice_lists_i18n.each do |k,v|
+      if k == self.voice_id
+        return v
+      end
     end
-    voice_id
+    self.voice_id
   end
 end
