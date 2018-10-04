@@ -4,3 +4,10 @@ ja:
       voice_list:
         Mizuki: みずき
         Takumi: たくみ
+  activerecord:
+    errors:
+      models:
+        talk:
+          attributes:
+            content:
+              blank: なにか入力してください

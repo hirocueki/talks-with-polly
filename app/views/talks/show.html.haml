@@ -4,7 +4,7 @@
   = @talk.content
 %p
   %strong Voice:
-  = @talk.voice_jp
+  %span.badge.badge-primary= @talk.voice_jp
 %p
   %audio#talk{:controls => "", :src => "#{'/'+File.basename(@talk.audio_path)}"}
     Your browser does not support the

@@ -1,7 +1,7 @@
 %p#notice= notice
 %h1 Amazon Polly 音声合成テスト
 = link_to '新規作成', new_talk_path
-%table
+%table.table
   %thead
     %tr
       %th Content
@@ -12,7 +12,8 @@
     - @talks.each do |talk|
       %tr
         %td= talk.content
-        %td= talk.voice_jp
+        %td
+          %span.badge.badge-primary= talk.voice_jp
         %td
           %audio#talk{:controls => "", :src => "#{'/'+File.basename(talk.audio_path)}"}
             Your browser does not support the
