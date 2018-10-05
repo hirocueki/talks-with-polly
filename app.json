@@ -1,0 +1,33 @@
+{
+  "name": "Polly on Rails",
+  "description": "Talk generator by AWS Polly",
+  "repository": "https://github.com/hirocueki/polly",
+  "keywords": [
+    "AWS",
+    "Heroku",
+    "Amazon",
+    "Polly"
+  ],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "env": {
+    "TIME_ZONE": {
+      "description": "The timezone the server will be based out of. See the list of valid values here: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
+      "value": "Asia/Tokyo"
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "Access key for your AWS Polly."
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "Secret access key for your AWS Polly."
+    },
+    "APP_HOST_NAME": {
+      "description": "<App Name as entered above>.herokuapp.com. For Example: my-heroku-app-name.herokuapp.com",
+      "value": "REPLACE ME.herokuapp.com"
+    }
+  },
+  "scripts": {
+    "postdeploy": "rails db:migrate"
+  }
+}
