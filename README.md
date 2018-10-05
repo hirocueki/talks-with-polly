@@ -1,6 +1,6 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-# Polly on Rails
+# Talks with Polly
 
 AWS Polly を使った音声合成結果の検証用アプリ
 
