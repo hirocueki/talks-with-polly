@@ -23,4 +23,6 @@
 .byebug_history
 vendor/bundle
 public/*.mp3
+
 .vscode/
+.env

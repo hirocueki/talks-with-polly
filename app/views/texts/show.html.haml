@@ -1,0 +1,8 @@
+%p#notice= notice
+
+.content
+  = link_to 'ファイルへのリンク', @text.text.to_s
+
+= link_to 'Edit', edit_text_path(@text)
+\|
+= link_to 'Back', texts_path
