@@ -2936,23 +2936,23 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="fog-aws (vbundled(2.0.1)) [path][gem]" type="rubylib">
+      <library name="fog-aws (vbundled(3.5.0)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
         </properties>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-2.0.1/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-2.0.1/tests" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-2.0.1/gemfiles" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-3.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-3.5.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-3.5.0/gemfiles" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-2.0.1/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-2.0.1/tests" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-2.0.1/gemfiles" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-3.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-3.5.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-3.5.0/gemfiles" />
         </SOURCES>
         <excluded>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-2.0.1/tests" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-2.0.1/gemfiles" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-3.5.0/tests" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/fog-aws-3.5.0/gemfiles" />
         </excluded>
       </library>
     </orderEntry>
