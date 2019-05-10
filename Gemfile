@@ -6,8 +6,8 @@ git_source(:github) do |repo_name|
 end
 ruby '2.6.3'
 
-gem 'rails', '~> 5.2.2.1'
-gem 'pg', group: :production
+gem 'rails', '~> 5.2.3'
+gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'sassc-rails'
 gem 'uglifier', '>= 1.3.0'
@@ -18,10 +18,14 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'aws-sdk', '~> 3'
 gem 'aws-sdk-polly'
+gem 'aws-sdk-s3', '~> 1'
 gem 'enum_help'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'hamlit-rails'
+gem 'dotenv-rails'
+gem 'carrierwave'
+gem 'fog-aws'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

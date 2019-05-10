@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root "texts#index"
+
   resources :talks, only: %i(index create new show destroy)
-  root "talks#index"
+  resources :texts
 end
